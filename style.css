@@ -1,148 +1,208 @@
 h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25pt;
-    color: #003f5c;
-    text-align: center;
+    font-family: mr-eaves-modern, sans-serif;
+    font-style: bold;
+    font-size: 28pt;
+    color: #001C71;
+    text-align: left;
 }
 
 h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 13pt;
-    font-weight: bold;
-    color: #303030;
+    font-size: 18pt;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+#ingressi{
+    font-size: 16pt;
+    font-family: mr-eaves-modern, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
     text-align: left;
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-block-end: 5px;
+    padding-top: 15px;
+}
+
+h3 {
+    font-size: 14pt;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: bold;
+    color: #404040;
+    text-align: center;
+}
+
+b {
+    font-size: 12pt;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #001C71;
+}
+
+/*.quote {
+    font-size: 18pt;
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: bold;
+    color: #001C71;
+    font-style: italic;
 }
 
 /*margin-left: 20px;
 border: 0.5px solid #003f5c;
 box-shadow: 2px, 4px, #003f5c;*/
 
-#text {
-    font-size: 11pt;
-    font-weight: 100;
-    align-content: center;
-    padding-bottom: 10px;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
 body {
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 10;
-    font-size: 10pt;
-    color: #303030;
-    margin-left: 20px;
-    text-align: center;
+    font-family: adobe-caslon-pro, serif;
+    font-style: normal;
+    font-size: 14pt;
+    font-weight: 100;
+    line-height: 1.3;
+    color: #404040;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
 }
 
 #container {
-    border-top: 0.5px solid rgb(172, 172, 172);
-    border-bottom: 0.5px solid rgb(172, 172, 172);
-    text-align: center;
+    /*border: 1px solid black;*/
     margin-left: 25%;
     margin-right: 25%;
 }
 
-.flex-container {
+.start{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.section {
+    border-top: 1px solid #002592;
+    /*margin-top: 40px;*/
+    margin-bottom: 50px;
+}
+
+/*section header*/
+.heading {
+    display: flex;
+    /*border: 2px solid;*/
+    color: #002592;
+    margin-bottom: 20px;
+}
+.part {
+    background-color: #002592;
+    color: whitesmoke;
+    width: 250px;
+    height: 65px;
+}
+.head2 {
+    padding-left: 20px;
+   /* align-content: left;*/
+    font-weight: bold;
+}
+
+.subsection {
     display: flex;
     flex-wrap: nowrap;
-    padding-left: 20px;
-}
-  
-.flex-container {
-    background-color: transparent;
-    /*width: 70%;*/
-    margin-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 10;
-    text-align: center;
-    /* line-height: 75px; */
-    font-size: 30px;
-    color: #303030;
+    border-top: 0.5px solid rgb(238, 238, 238);
+    border-bottom: 0.5px solid rgb(238, 238, 238);
+    /*border: 1px solid black;
+    padding-top: 20px;*/
+    margin-bottom: 40px;
+    margin-top: 40px;
+    justify-content: space-evenly;
 }
 
-
-/*.flex-container div {
-    flex: 0 0 content;
-    flex-basis: content;
-}*/
-
-.flex-container div:first-child {
-    /*flex: 0 0 40px;*/
-    background-color: #003f5c;
+.innerdiv {
+    /*border: 1px solid black;*/
+    width: 100%;
 }
 
-
-.flex-container div:nth-child(2) {
-    /*flex: 0 0 60px;*/
-    background-color:#2f4b7c;
-}
-
-.flex-container div:nth-child(3) {
-    /*flex: 0 0 80px;*/
-    background-color:#665191;
-}
-
-.flex-container div:nth-child(4) {
-    /*flex: 0 0 40px;*/
-    background-color:#a05195;
-}
-
-.flex-container div:nth-child(5) {
-    /*flex: 0 0 10px;*/
-    background-color: #d45087;
-}
-
-.flex-container div:nth-child(6) {
-    /*flex: 0 0 20px;*/
-    background-color:#f95d6a;
-}
-
-.flex-container div:nth-child(7) {
-    /*flex: 0 0 20px;*/
-    background-color:#ff7c43;
-}
-
-.flex-container div:nth-child(8) {
-    /*flex: 0 0 5px;*/
-    background-color: #ffa600;
-}
-
-.segment {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+.innerdiv p{
     font-size: 10pt;
     text-align: center;
 }
 
-.segment p {
-    position: absolute;
-    top: 15px;
-    /* width: 100%; */
-    display: none;
-    border: 0.5px solid #003f5c;
-    background-color: whitesmoke;
-    padding: 3px;
-    z-index: 999;
+.zoomimg {
+    width: 100%;
+    transition: border 0.5s;
+    transition:transform 0.5s ease-in; 
 }
 
-.segment:hover p {
-    display: block;
-}
-
-.totalNumber {
-    /*position: absolute;*/
-    padding-left: 20px;
-    padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 10;
-    text-align: left;
+.zoomimg:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5) 0.5s;
+    border: 0.5px solid rgb(238, 238, 238);
+    /*box-shadow: 0 0 2px #404040;*/
 }
 
 footer {
-    margin-top: 50px;
+    border-top: 1px solid rgb(238, 238, 238);
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size:9pt;
 }
+
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=63O0-0kwi++bu++hX++++rd++kX */
+
+/* Feel free to copy&paste color codes to your application */
+
+
+/* As hex codes */
+
+.color-primary-0 { color: #1C55FF }	/* Main Primary color */
+.color-primary-1 { color: #AEC2FF }
+.color-primary-2 { color: #80A0FF }
+.color-primary-3 { color: #002592 }
+.color-primary-4 { color: #001C71 }
+
+.color-secondary-1-0 { color: #00FFE4 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #A4FFF5 }
+.color-secondary-1-2 { color: #70FFF0 }
+.color-secondary-1-3 { color: #008778 }
+.color-secondary-1-4 { color: #00685D }
+
+.color-secondary-2-0 { color: #6A19FF }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #CAACFF }
+.color-secondary-2-2 { color: #AB7EFF }
+.color-secondary-2-3 { color: #340094 }
+.color-secondary-2-4 { color: #280072 }
+
+.color-complement-0 { color: #FFAE00 }	/* Main Complement color */
+.color-complement-1 { color: #FFE2A4 }
+.color-complement-2 { color: #FFD270 }
+.color-complement-3 { color: #D99400 }
+.color-complement-4 { color: #A77200 }
+
+
+
+/* As RGBa codes */
+
+.rgba-primary-0 { color: rgba( 28, 85,255,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(174,194,255,1) }
+.rgba-primary-2 { color: rgba(128,160,255,1) }
+.rgba-primary-3 { color: rgba(  0, 37,146,1) }
+.rgba-primary-4 { color: rgba(  0, 28,113,1) }
+
+.rgba-secondary-1-0 { color: rgba(  0,255,228,1) }	/* Main Secondary color (1) */
+.rgba-secondary-1-1 { color: rgba(164,255,245,1) }
+.rgba-secondary-1-2 { color: rgba(112,255,240,1) }
+.rgba-secondary-1-3 { color: rgba(  0,135,120,1) }
+.rgba-secondary-1-4 { color: rgba(  0,104, 93,1) }
+
+.rgba-secondary-2-0 { color: rgba(106, 25,255,1) }	/* Main Secondary color (2) */
+.rgba-secondary-2-1 { color: rgba(202,172,255,1) }
+.rgba-secondary-2-2 { color: rgba(171,126,255,1) }
+.rgba-secondary-2-3 { color: rgba( 52,  0,148,1) }
+.rgba-secondary-2-4 { color: rgba( 40,  0,114,1) }
+
+.rgba-complement-0 { color: rgba(255,174,  0,1) }	/* Main Complement color */
+.rgba-complement-1 { color: rgba(255,226,164,1) }
+.rgba-complement-2 { color: rgba(255,210,112,1) }
+.rgba-complement-3 { color: rgba(217,148,  0,1) }
+.rgba-complement-4 { color: rgba(167,114,  0,1) }
+
+
+
+/* Generated by Paletton.com © 2002-2014 */
+/* http://paletton.com */
